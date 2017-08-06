@@ -1,0 +1,8 @@
+docker run -tid -p 80:80 --name="apache_server" -v /c/Users/iulian/Projects/edu/php:/var/www nimmis/apache-php5
+
+
+$ docker run -tid -p 80:80 --name="webserver" -v /c/Users/iulian/Projects/edu/php:/var/www/html/ nimmis/apache-php5
+
+docker run -ti -p 80:80 --name="webserver" -v /c/Users/iulian/Projects/edu/php:/var/www/html/ nimmis/apache-php5
+
+$ docker exec -ti webserver composer require phpunit/phpunit
